@@ -10,3 +10,8 @@ Steps:
 4. npm install --save-dev tailwindcss@3.3.2
 5. npx tailwindcss init
 6. npm run start (optional : -c clear cache)
+
+7. Buka Hp
+8. Download, Install, Run: Expo Go
+10. pilih Scan Qr
+    
