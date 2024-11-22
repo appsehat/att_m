@@ -1,12 +1,21 @@
-import { Image, View } from "react-native";
+import React from "react";
+import { ActivityIndicator, View, StyleSheet } from "react-native";
 
-export default Loading = () => {
+const Loading = () => {
   return (
-    <View className="flex-1 bg-white justify-center items-center">
-      <Image
-        style={{ width: 50, height: 50 }}
-        source={require("@/assets/images/loading.gif")}
-      />
+    <View style={styles.loadingContainer}>
+      <ActivityIndicator size="large" color="green" />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff", // Sesuaikan warna background sesuai tema
+  },
+});
+
+export default Loading;
