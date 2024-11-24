@@ -21,7 +21,7 @@ export default function LoginSubmit({ label = {}, form = {} }) {
   };
 
   return (
-    <View className="flex bg-green-700 mb-5 rounded-xl justify-center">
+    <View className="flex bg-green-700 rounded-xl justify-center">
       <TouchableOpacity
         style={{ height: 50 }}
         className="flex w-full justify-center items-center"

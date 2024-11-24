@@ -2,7 +2,7 @@ import { Stack } from "expo-router";
 import { useEffect } from "react";
 import * as SecureStore from "expo-secure-store";
 
-import AppContext from "@/store/AppContext";
+import AppContext from "@/components/AppContext";
 
 export default function RootLayout() {
   useEffect(() => {

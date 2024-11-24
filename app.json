@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "attrs_m",
-    "slug": "attrs_m",
-    "scheme": "attrs_m",
+    "name": "att_m",
+    "slug": "att_m",
+    "scheme": "att-m",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,21 +17,25 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.info.kotaawan.attrs_m"
+      "package": "com.info.kotaawan.att_m"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/logo.png"
     },
     "plugins": [
       "expo-router"
     ],
     "extra": {
+      "router": {
+        "origin": false
+      },
       "eas": {
-        "projectId": "getFromEas"
+        "projectId": "5c03383e-1be4-44c8-8ad9-b9497243b5e4"
       }
-    }
+    },
+    "owner": "info.kotaawan"
   }
 }

@@ -8,6 +8,8 @@ const AppLang = {
 
     APP_NAME: "Si-HR",
 
+    CHECK_IN: "Check-in",
+
     ENTER_YOUR_PASSWORD: "Masukkan kata sandi Anda",
     ENTER_YOUR_USERNAME: "Masukkan email Anda",
     ENTER_YOUR_USERNAME_AND_PASSWORD:
@@ -29,7 +31,10 @@ const AppLang = {
 
     APP_NAME: "Si-HR",
     ATTENDANCE_LOGS: "Data Absensi",
+    ATTENDANCES: "Hadir",
 
+    CHECK_IN: "Masuk",
+    CHECK_OUT: "Keluar",
     COURSES: "Pelatihan",
 
     ENTER: "Masuk",
@@ -43,6 +48,7 @@ const AppLang = {
     LEAVES: "Cuti",
     LOG_BOOK: "Buku Log",
 
+    NAVIGATE_CENTER: "Pusat Navigasi",
     NEWS: "Berita",
 
     OVER_TIMES: "Lembur",
@@ -50,6 +56,7 @@ const AppLang = {
     PERMITS: "Izin",
 
     RESUMES: "CV Saya",
+    LEAVE_REST: "Sisa Cuti",
 
     SALARIES: "Slip Gaji",
 

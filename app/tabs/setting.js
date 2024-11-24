@@ -2,9 +2,9 @@ import { useIsFocused } from "@react-navigation/native";
 import { useContext, useEffect, useState } from "react";
 import { Text, View } from "react-native";
 
-import { AppContext } from "@/store/AppContext";
-import AppLabel from "@/libs/AppLabel";
-import * as Function from "@/libs/AppFunction";
+import { AppContext } from "@/components/AppContext";
+import AppLabel from "@/components/AppLabel";
+import * as Function from "@/components/AppFunction";
 
 import Loading from "@/components/ui/Loading";
 import Layout from "@/components/ui/Layout";

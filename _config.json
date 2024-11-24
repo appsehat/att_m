@@ -1,4 +1,7 @@
 {
+    "APP_ORG":"RSU Univ Muhammadiyah Cirebon",
+    "APP_NAME":"si-HR",
+    
     "URL_API": "https://api/",
     "URL_AVATAR_STUDENT": "https://url/",
 

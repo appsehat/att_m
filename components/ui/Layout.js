@@ -1,17 +1,18 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { router } from "expo-router";
+import _config from "@/_config.json";
 
 export default function Layout({ children, back, title }) {
   return (
-    <View className="mt-7">
+    <View className="mt-9">
       <View className="px-4 bg-white">
         {back ? (
           <View className="pt-2 flex flex-row justify-between">
             <View className="p-1 bg-red-200 rounded-3xl">
               <TouchableOpacity
                 className="px-3 py-1 bg-orange-100 rounded-2xl"
-                onPress={() => router.push(_back)}
+                onPress={() => router.push(back)}
               >
                 <Ionicons
                   name="arrow-back"
@@ -29,11 +30,19 @@ export default function Layout({ children, back, title }) {
           </View>
         ) : null}
 
-        <View className="mb-3 justify-center items-center">
+        <View className="flex-row items-center mb-5">
           <Image
             source={require("@/assets/images/logo.png")}
-            className="w-14 h-14"
+            className="w-10 h-10"
           />
+          <View className="ml-1">
+            <Text className="text-md text-gray-700 font-bold">
+              {_config.APP_ORG}
+            </Text>
+            <Text className="text-xl text-green-800 font-bold">
+              {_config.APP_NAME}
+            </Text>
+          </View>
         </View>
 
         {children}

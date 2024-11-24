@@ -3,9 +3,9 @@ import { useContext, useEffect, useState } from "react";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import { AppContext } from "@/store/AppContext";
-import AppLabel from "@/libs/AppLabel";
-import * as Function from "@/libs/AppFunction";
+import { AppContext } from "@/components/AppContext";
+import AppLabel from "@/components/AppLabel";
+import * as Function from "@/components/AppFunction";
 
 import Loading from "@/components/ui/Loading";
 import LoginLayout from "@/components/ui/Login/LoginLayout";
@@ -36,7 +36,7 @@ export default function PageLogin() {
   if (loading) return <Loading />;
   return (
     <LoginLayout label={label}>
-      <View className="mb-2 flex p-2 bg-gray-100 rounded-lg justify-center">
+      <View className="flex p-2 mb-2 bg-gray-100 rounded-lg justify-center">
         <View className="flex-row items-center p-1">
           <Ionicons name="mail-open" size={20} color={"gray"} />
           <TextInput
@@ -49,7 +49,7 @@ export default function PageLogin() {
         </View>
       </View>
 
-      <View className="mb-3 flex p-2 bg-gray-100 rounded-lg justify-center">
+      <View className="flex p-2 mb-3 bg-gray-100 rounded-lg justify-center">
         <View className="flex-row items-center justify-between p-1">
           <Ionicons name="lock-closed" size={20} color={"gray"} />
           <TextInput
@@ -70,7 +70,7 @@ export default function PageLogin() {
         form={{ id: id, username: username, password: password }}
       />
 
-      <View className="flex-row justify-between items-center">
+      <View className="flex-row mt-5 justify-between items-center">
         <Text className="text-xs text-gray-300">@mindset.id</Text>
         <Text className="text-xs text-gray-400">si-hr.1.0.0</Text>
       </View>

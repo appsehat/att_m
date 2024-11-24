@@ -1,17 +1,18 @@
 import * as SecureStore from "expo-secure-store";
 import { useContext, useEffect, useState } from "react";
-import { RefreshControl, ScrollView, View } from "react-native";
+import { Image, RefreshControl, ScrollView, Text, View } from "react-native";
 
-import { AppContext } from "@/store/AppContext";
-import AppLabel from "@/libs/AppLabel";
-import * as Function from "@/libs/AppFunction";
+import { AppContext } from "@/components/AppContext";
+import AppLabel from "@/components/AppLabel";
+import * as Function from "@/components/AppFunction";
 import _config from "@/_config.json";
 
 import Layout from "@/components/ui/Layout";
 import Loading from "@/components/ui/Loading";
-import DashboardMenu from "@/components/ui/dashboard/DashboardMenu";
-import DashboardAvatar from "@/components/ui/dashboard/DashboardAvatar";
-import DashboardUser from "@/components/ui/dashboard/DashboardUser";
+import DashboardUser from "@/components/ui/Dashboard/DashboardUser";
+import DashboardAttendance from "@/components/ui/Dashboard/DashboardAttendance";
+import DashboardChart from "@/components/ui/Dashboard/DashboardChart";
+import DashboardMenu from "@/components/ui/Dashboard/DashboardMenu";
 
 export default function TabDashboard() {
   const value = useContext(AppContext);
@@ -40,10 +41,19 @@ export default function TabDashboard() {
       }
     >
       <Layout>
-        <View className="justify-center items-center">
-          <DashboardAvatar uri={"https://github.com/octocat.png"} />
-          <DashboardUser name={"Nama User"} />
-        </View>
+        <DashboardUser
+          uri={"https://github.com/octocat.png"}
+          name={"Nama User"}
+        />
+        <Text className="text-xl text-gray-500 font-bold mb-2">
+          {label.ATTENDANCE_LOGS}
+        </Text>
+        <DashboardAttendance label={label} />
+        <DashboardChart label={label} />
+
+        <Text className="text-xl text-gray-500 font-bold mt-5">
+          {label.NAVIGATE_CENTER}
+        </Text>
         <DashboardMenu label={label} />
       </Layout>
     </ScrollView>
