@@ -4,7 +4,7 @@ import { Text, View } from "react-native";
 export default function DashboardChart({ label }) {
   return (
     <View className="flex-row justify-between gap-x-3 mt-3">
-      <View className="flex-1 border border-gray-500 bg-gray-100 p-2 justify-center rounded-xl">
+      <View className="flex-1 border border-gray-300 bg-white p-2 justify-center rounded-xl">
         <View className="flex-row items-center">
           <Ionicons name="briefcase" size={18} color="gray" />
           <Text className="text-sm text-green-900 ml-1">{label.PERMITS}</Text>
@@ -14,7 +14,7 @@ export default function DashboardChart({ label }) {
         </View>
       </View>
 
-      <View className="flex-1 border border-gray-500 bg-gray-100 p-2 justify-center rounded-xl">
+      <View className="flex-1 border border-gray-300 bg-white p-2 justify-center rounded-xl">
         <View className="flex-row items-center">
           <Ionicons name="alarm" size={18} color="gray" />
           <Text className="text-sm text-green-900 ml-1">
@@ -26,7 +26,7 @@ export default function DashboardChart({ label }) {
         </View>
       </View>
 
-      <View className="flex-1 border border-gray-500 bg-gray-100 p-2 justify-center rounded-xl">
+      <View className="flex-1 border border-gray-300 bg-white p-2 justify-center rounded-xl">
         <View className="flex-row items-center">
           <Ionicons name="calendar" size={18} color="gray" />
           <Text className="text-sm text-green-900 ml-1">

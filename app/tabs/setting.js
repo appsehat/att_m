@@ -32,13 +32,27 @@ export default function PageProfile() {
 
   if (loading) return <Loading />;
   return (
-    <Layout title={label.SETTING}>
+    <Layout logo={true} title={label.SETTING}>
       <ScrollView
         refreshControl={
           <RefreshControl refreshing={loading} onRefresh={pageControll} />
         }
       >
-        <SettingMenu label={label.LANGUAGE} target="/tabs/language" />
+        <SettingMenu
+          icon="language"
+          label={label.LANGUAGE}
+          target="/tabs/language"
+        />
+        <SettingMenu
+          icon="key"
+          label={label.CHANGE_PASSWORD}
+          target="/tabs/changePassword"
+        />
+        <SettingMenu
+          icon="log-out"
+          label={label.LOGOUT}
+          target="/tabs/logout"
+        />
       </ScrollView>
     </Layout>
   );

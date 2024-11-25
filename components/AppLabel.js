@@ -34,6 +34,7 @@ const AppLang = {
     ATTENDANCE_LOGS: "Data Absensi",
     ATTENDANCES: "Hadir",
 
+    CHANGE_PASSWORD: "Ubah Password",
     CHECK_IN: "Masuk",
     CHECK_OUT: "Keluar",
     CITY: "Kota/Kabupaten",
@@ -56,6 +57,7 @@ const AppLang = {
 
     LANGUAGE: "Bahasa",
     LEAVES: "Cuti",
+    LOGOUT: "Logout",
     LOG_BOOK: "Buku Log",
 
     NAME: "Nama",

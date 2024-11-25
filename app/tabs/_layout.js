@@ -77,6 +77,7 @@ export default function Dashboard() {
       />
 
       <Tabs.Screen name="profile" options={{ href: null }} />
+      <Tabs.Screen name="language" options={{ href: null }} />
     </Tabs>
   );
 }
@@ -84,10 +85,10 @@ export default function Dashboard() {
 const styles = StyleSheet.create({
   tabBarStyle: {
     position: "absolute",
-    bottom: 15,
+    bottom: 6,
     left: 15,
     right: 15,
-    height: 60,
+    height: 50,
     borderRadius: 15,
     backgroundColor: "#487c43",
     alignItems: "center",
@@ -96,8 +97,8 @@ const styles = StyleSheet.create({
   fingerprintTab: {
     backgroundColor: "#488c43",
     borderRadius: 30,
-    width: 55, // Menambah ukuran tab agar lebih besar
-    height: 55,
+    width: 51, // Menambah ukuran tab agar lebih besar
+    height: 51,
     justifyContent: "center",
     alignItems: "center",
     elevation: 10, // Meningkatkan elevation untuk efek shadow lebih kuat

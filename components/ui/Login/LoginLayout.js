@@ -6,17 +6,17 @@ export default function LoginLayout({ children, label }) {
   return (
     <SafeAreaView className="flex-1 p-4 justify-around bg-white">
       <View>
-        <View className="flex-row items-center mb-5">
+        <View className="flex-row items-center mb-10">
           <Image
             source={require("@/assets/images/logo.png")}
-            className="w-10 h-10"
+            className="w-16 h-16"
           />
           <View className="ml-2">
+            <Text className="text-3xl text-green-800 font-bold">
+              {_config.APP_NAME}
+            </Text>
             <Text className="text-md text-gray-500 font-bold">
               {_config.APP_ORG}
-            </Text>
-            <Text className="text-xl text-green-800 font-bold">
-              {_config.APP_NAME}
             </Text>
           </View>
         </View>

@@ -7,15 +7,15 @@ export default DashboardUser = ({ uri, name = "" }) => {
   };
 
   return (
-    <View className="justify-center items-center">
+    <View className="justify-center items-center mt-2">
       <TouchableOpacity onPress={btnProfileClick}>
         <View className="p-1 bg-green-700 rounded-full">
           <Image source={{ uri: uri }} className="w-10 h-10 rounded-full " />
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={btnProfileClick} className="mb-4">
-        <Text className="text-md text-green-900">{name}</Text>
+      <TouchableOpacity onPress={btnProfileClick} className="mb-2">
+        <Text className="text-lg text-green-900 font-bold">{name}</Text>
       </TouchableOpacity>
     </View>
   );
