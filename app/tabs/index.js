@@ -30,17 +30,17 @@ export default function TabDashboard() {
 
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 10);
   };
 
   if (loading) return <Loading />;
   return (
-    <ScrollView
-      refreshControl={
-        <RefreshControl refreshing={loading} onRefresh={pageControll} />
-      }
-    >
-      <Layout>
+    <Layout title={label.DASHBOARD}>
+      <ScrollView
+        refreshControl={
+          <RefreshControl refreshing={loading} onRefresh={pageControll} />
+        }
+      >
         <DashboardUser
           uri={"https://github.com/octocat.png"}
           name={"Nama User"}
@@ -55,7 +55,7 @@ export default function TabDashboard() {
           {label.NAVIGATE_CENTER}
         </Text>
         <DashboardMenu label={label} />
-      </Layout>
-    </ScrollView>
+      </ScrollView>
+    </Layout>
   );
 }

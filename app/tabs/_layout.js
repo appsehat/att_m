@@ -47,7 +47,7 @@ export default function Dashboard() {
             </View>
           ),
           tabBarItemStyle: {
-            marginTop: -60, // Naikkan posisi tab fingerprint
+            marginTop: -40, // Naikkan posisi tab fingerprint
           },
         }}
       />

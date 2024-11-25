@@ -1,9 +1,10 @@
 import { Image, Text, View } from "react-native";
 import _config from "@/_config.json";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function LoginLayout({ children, label }) {
   return (
-    <View className="flex-1 p-4 justify-around bg-white">
+    <SafeAreaView className="flex-1 p-4 justify-around bg-white">
       <View>
         <View className="flex-row items-center mb-5">
           <Image
@@ -30,6 +31,6 @@ export default function LoginLayout({ children, label }) {
 
         {children}
       </View>
-    </View>
+    </SafeAreaView>
   );
 }

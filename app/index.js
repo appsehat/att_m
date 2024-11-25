@@ -30,7 +30,7 @@ export default function PageLogin() {
   const pageControll = async () => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 10);
   };
 
   if (loading) return <Loading />;

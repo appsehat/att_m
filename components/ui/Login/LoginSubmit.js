@@ -17,7 +17,7 @@ export default function LoginSubmit({ label = {}, form = {} }) {
       setProcess(false);
 
       router.push("/tabs");
-    }, 1000);
+    }, 10);
   };
 
   return (

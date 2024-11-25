@@ -1,5 +1,6 @@
 import { Stack } from "expo-router";
 import { useEffect } from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import * as SecureStore from "expo-secure-store";
 
 import AppContext from "@/components/AppContext";
@@ -10,17 +11,24 @@ export default function RootLayout() {
   }, []);
 
   const rootLoader = async () => {
-    await SecureStore.setItemAsync("appLang", "id");
-    if (!(await SecureStore.getItemAsync("appLang")))
+    try {
       await SecureStore.setItemAsync("appLang", "id");
+      if (!(await SecureStore.getItemAsync("appLang"))) {
+        await SecureStore.setItemAsync("appLang", "id");
+      }
+    } catch (error) {
+      console.error("Error in rootLoader:", error);
+    }
   };
 
   return (
     <AppContext>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="tabs" />
-      </Stack>
+      <SafeAreaProvider>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="index" />
+          <Stack.Screen name="tabs" />
+        </Stack>
+      </SafeAreaProvider>
     </AppContext>
   );
 }

@@ -9,7 +9,7 @@ import * as Function from "@/components/AppFunction";
 import Loading from "@/components/ui/Loading";
 import Layout from "@/components/ui/Layout";
 
-export default function TabNotification() {
+export default function TabMessage() {
   const focus = useIsFocused();
   const value = useContext(AppContext);
   const label = AppLabel[value.LANG];

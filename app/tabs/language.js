@@ -11,7 +11,7 @@ import Layout from "@/components/ui/Layout";
 import Loading from "@/components/ui/Loading";
 import SettingMenu from "@/components/ui/Setting/SettingMenu";
 
-export default function PageProfile() {
+export default function PageLanguage() {
   const value = useContext(AppContext);
   const label = AppLabel[value.LANG];
 
@@ -32,14 +32,10 @@ export default function PageProfile() {
 
   if (loading) return <Loading />;
   return (
-    <Layout title={label.SETTING}>
-      <ScrollView
-        refreshControl={
-          <RefreshControl refreshing={loading} onRefresh={pageControll} />
-        }
-      >
-        <SettingMenu label={label.LANGUAGE} target="/tabs/language" />
-      </ScrollView>
+    <Layout title={label.LANGUAGE} back="/tabs/setting">
+      <View>
+        <Text>Bahasa</Text>
+      </View>
     </Layout>
   );
 }
