@@ -12,15 +12,25 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCPU3WLjUB-BDEmC-LHB4zgpLeiZsGAmYY"
+        }
+      },
       "package": "com.info.kotaawan.att_m"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCPU3WLjUB-BDEmC-LHB4zgpLeiZsGAmYY"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/images/logo.png"

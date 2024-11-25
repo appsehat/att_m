@@ -30,8 +30,9 @@ const AppLang = {
     ERR_USERNAME_EMPTY: "Pengguna kosong !",
 
     ADDRESS: "Alamat",
-    APP_NAME: "Si-HR",
+    ATTENDANCE: "Kehadiran",
     ATTENDANCE_LOGS: "Data Absensi",
+    ATTENDANCE_TYPE: "Tipe Kehadiran",
     ATTENDANCES: "Hadir",
 
     CHANGE_PASSWORD: "Ubah Password",
@@ -69,12 +70,16 @@ const AppLang = {
     PERMITS: "Izin",
     POB: "Tempat Lahir",
     PROFILE: "Profile",
+    PROCESS: "Proses",
 
     RESUMES: "CV Saya",
     LEAVE_REST: "Sisa Cuti",
 
     SALARIES: "Slip Gaji",
+    SELECT_A_TYPE: "Pilih Tipe",
     SETTING: "Pengaturan",
+
+    TAKE_PICTURE: "Ambil Foto",
 
     WELCOME: "Selamat Datang",
   },
